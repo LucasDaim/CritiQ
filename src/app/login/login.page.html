@@ -1,0 +1,33 @@
+
+<ion-content [fullscreen]="true">
+<ion-header collapse="condense">
+  </ion-header>
+</ion-content>
+<ion-content class="div1">
+  <ion-content class="login">
+    <ion-text class="titulo">Login</ion-text>
+  </ion-content>
+<ion-list>
+  <ion-item>
+    <ion-input label="Email" placeholder="email@domain.com">
+      <ion-button fill="clear" slot="end" aria-label="Show/hide">
+      </ion-button>
+    </ion-input>
+  </ion-item>
+</ion-list>
+<ion-list>
+  <ion-item>
+    <ion-input label="Senha" placeholder="Senha">
+      <ion-button fill="clear" slot="end" aria-label="Show/hide">
+        <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+      </ion-button>
+    </ion-input>
+  </ion-item>
+  <ion-checkbox>remember me</ion-checkbox>
+  
+</ion-list>
+<ion-button class="login-button" expand="block">Login</ion-button> <br>
+<!--<u [routerLink]="['/cadastro']">Criar Conta</u>-->
+<ion-text>Não tem conta? <u [routerLink]="['/cadastro']">Criar Conta</u></ion-text>
+
+</ion-content>
